@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Montserrat:wght@100&family=Noto+Sans:wght@200&family=Open+Sans:wght@300&family=Playfair+Display&family=Poppins:wght@100&family=Roboto:wght@100;400&family=Source+Sans+3:wght@200&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.phone{
+    height: 611px;
+    width: 305px;
+    background-image: url(../img/headphone.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.phone .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.3rem 0.5rem ;
+    color: #fff;
+    font-size: 0.75rem;
+}
+
+.phone .nav .lst{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.4rem;
+}
+
+.phone .nav .lst:nth-child(1),
+.phone .nav .scnd #ba3{
+    font-size: 0.60rem;
+}
+
+.phone .nav .scnd{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 0.3rem;
+}
+
+.phone .nav .network{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 0.2rem;
+}
+
+.phone .nav .network div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.07rem;
+}
+
+.phone .nav .network span:nth-child(4){
+    background-color: #fff;
+    height: 10px;
+    width: 2px;
+}
+
+.phone .nav .network span:nth-child(3){
+    background-color: #fff;
+    height: 7px;
+    width: 2px;
+    margin-top: 3px;
+}
+
+.phone .nav .network span:nth-child(2){
+    background-color: #fff;
+    height: 5px;
+    width: 2px;
+    margin-top: 6px;
+}
+
+.phone .nav .network span:nth-child(1){
+    background-color: #fff;
+    height: 2px;
+    width: 2px;
+    margin-top: 9px;
+}
+
+.phone .search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone .search #google{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    position: absolute;
+    top: 10.3%;
+    left: 41.1%;
+    color: #00f;
+    cursor: pointer;
+}
+
+.phone .search input{
+    margin: 1.8rem 1.3rem 2rem;
+    padding: 0 6.2rem 0 2.3rem;
+    width: 100%;
+    height: 2.5rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: color-mix(in srgb, #fff 90%, transparent);
+}
+
+.phone .search input::placeholder{
+    font-size: 0.75rem;
+    color: color-mix(in srgb, #999 80%, transparent);
+}
+
+.phone .search .fa-microphone{
+    position: absolute;
+    top: 10.5%;
+    left: 52.5%;
+    color: #f0860d;
+    cursor: pointer;
+}
+
+.phone .search .fa-camera-retro{
+    position: absolute;
+    top: 10.5%;
+    left:54.5%;
+    font-size: 1rem;
+    color: #aa0f36;
+    cursor: pointer;
+}
+
+.search .dots{
+    position: absolute;
+    left: 57.5%;
+    top: 10.5%;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 3px;
+    place-content: center;
+    cursor: pointer;
+}
+
+.search .dots span:nth-child(9){
+    width: 3px;
+    height: 3px;
+    border-radius: 30%;
+    background-color: #f0860d;
+}
+
+.search .dots span:nth-child(8){
+    width: 3px;
+    height: 3px;
+    border-radius: 30%;
+    background-color: #036428;
+}
+
+.search .dots span:nth-child(7){
+    width: 3px;
+    height: 3px;
+    border-radius: 30%;
+    background-color: #10296e;
+}
+
+.search .dots span:nth-child(6){
+    width: 3px;
+    height: 3px;
+    border-radius: 30%;
+    background-color: #42167a;
+}
+
+.search .dots span:nth-child(5){
+    width: 3px;
+    height: 3px;
+    border-radius: 30%;
+    background-color: #4f99ec;
+}
+
+.search .dots span:nth-child(4){
+    width: 3px;
+    height: 3px;
+    border-radius: 30%;
+    background-color: #435f03;
+}
+
+.search .dots span:nth-child(3){
+    width: 3px;
+    height: 3px;
+    border-radius: 30%;
+    background-color: #aa0f36;
+}
+
+.search .dots span:nth-child(2){
+    width: 3px;
+    height: 3px;
+    border-radius: 30%;
+    background-color: #ee3939;
+}
+
+.search .dots span:nth-child(1){
+    width: 3px;
+    height: 3px;
+    border-radius: 30%;
+    background-color: #4f99ec;
+}
+
+.search .slash{
+    background-color: color-mix(in srgb, #000 6%, transparent);
+    height: 23px;
+    width: 1px;
+    position: absolute;
+    left: 56.5%;
+    top: 9.8%;
+}
+
+.phone .middle{
+    display: grid;
+    grid-template-columns: 2fr auto;
+    place-content: center;
+    gap: 1rem;
+    margin: 0 1.3rem 0;
+}
+
+.phone .middle div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 1rem;
+    color: #fff;
+}
+
+.phone .middle div:nth-child(1) span:nth-child(1){
+    font-size: 1.2rem;
+}
+
+.phone .middle div:nth-child(1) span:nth-child(2){
+    font-size: 2.7rem;
+    font-weight: thin;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.phone .middle div:nth-child(1) span:nth-child(3){
+    font-size: 0.65rem;
+    text-transform: capitalize;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 600;
+}
+
+.phone .middle div:nth-child(2){
+    height: 5rem;
+    width: 102px;
+    border: none;
+    color: color-mix(in srgb, #fff 80%, transparent);
+    border-radius: 1rem;
+    background-image: linear-gradient(180deg,rgb(0, 195, 255),rgb(86, 233, 243));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.2rem;
+    cursor: pointer;
+}
+
+.phone .middle div:nth-child(2) h3{
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+.phone .middle div:nth-child(2) p{
+    font-size: 0.5rem;
+}
+
+.phone .middle div:nth-child(2) img{
+   width: 35px;
+   object-fit: contain;
+   border-radius: 100% 100% 0.5rem 0.5rem;
+   margin-top: 0.2rem;
+}
+
+.phone .home-icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    place-content: center;
+    place-items: center;
+    margin: 11.3rem 0.75rem 0;
+}
+
+.phone .home-icons .icons img{
+    width: 40px;
+    object-fit: contain;
+    border-radius: 0.60rem;
+    cursor: pointer;
+}
+
+.phone .home-icons .icons p{
+    color: #fff;
+    font-size: 0.60rem;
+    letter-spacing: 0.05rem;
+    text-align: center;
+    opacity: 0.8;
+}
+
+.phone .default-icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-content: center;
+    place-items: center;
+    padding: 0.75rem;
+}
+
+.phone .default-icons .icon img{
+    width: 40px;
+    object-fit: contain;
+    border-radius: 0.60rem;
+    cursor: pointer;
+}
+
+.phone .default-icons .top::after{
+    content: '99+';
+    color: #fff;
+    background-color: #ee3939;
+    border-radius: 50%;
+    padding: 0.2rem;
+    bottom: 11%;
+    left: 48%;
+    position: absolute;
+    font-size: 0.5rem;
+}
+
+.phone .mini-dots{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 2rem 0 0.5rem;
+}
+
+.phone .mini-dots span{
+    background-color: color-mix(in srgb, #000 30%, #fff 60%);
+    /* opacity: 0.5; */
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+}
+
+.phone .mini-dots .fa-solid{
+    color: color-mix(in srgb, #000 30%, #fff 60%);
+    font-size: 0.25rem;
+    margin-top: 0.2rem;
+   
+}
+
+/* .phone .mini-dots span:nth-child(1)::after{
+    content: '';
+    width: 2px;
+    height: 2px;
+    background-color: #ee3939;
+    border-radius: 100% 0;
+} */
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4.5rem;
+    position: relative;
+    /* margin-top: 0.2rem; */
+    background-color: transparent;
+}
+
+footer div:nth-child(1){
+    height: 15px;
+    width: 15px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer div:nth-child(2){
+    height: 15px;
+    width: 15px;
+    border: 1px solid #fff;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+footer div:nth-child(3){
+    height: 15px;
+    width: 15px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    border-left: none;
+    cursor: pointer;
+}

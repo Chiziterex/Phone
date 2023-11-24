@@ -1,0 +1,102 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans:wght@300&family=Poppins:wght@100&family=Roboto:wght@100&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.iphone{
+    height: 100vh;
+    width: 340px;
+    background: linear-gradient(60deg,rgb(11, 28, 124) 20%,#6aa8e2 15%,rgb(211, 41, 19) 60%) ;
+    border: 2px solid rgb(0,0,0,0.4);
+}
+
+.iphone .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.2rem ;
+    color: #fff;
+    font-size: 0.70rem;
+}
+
+.iphone .rows{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-content: center;
+    place-items: center;
+    padding: 1rem 2rem 0;
+    gap: 1rem;
+}
+
+.iphone .rows .icons img{
+    width: 45px;
+    object-fit: contain;
+    border-radius: 0.75rem;
+    cursor: pointer;
+}
+
+.iphone .rows .icons p{
+    color: #fff;
+    font-size: 0.70rem;
+    letter-spacing: 0.05rem;
+    text-align: center;
+}
+
+.iphone .rows .icons #TR{
+    color: #fff;
+    font-size: 0.54rem;
+    text-align: center;
+}
+
+
+.iphone .rows .icons .petite{
+    color: #fff;
+    font-size: 0.60rem;
+    text-align: center;
+}
+
+.iphone .footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-content: center;
+    place-items: center;
+    margin-top: 7.2rem;
+    background-color: rgb(255, 255, 255,0.3);
+    padding: 0.75rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.iphone .footer .dots{
+    position: absolute;
+    top: 82%;
+}
+
+.iphone .footer .dots i{
+    font-size: 0.5rem;
+    color: #fff;
+}
+
+.iphone .footer .dots .lighter{
+    opacity: 0.5;
+    margin-left: 0.4rem;
+}
+
+.iphone .footer .icon img{
+    width: 48px;
+    object-fit: contain;
+    border-radius: 0.75rem;
+    cursor: pointer;
+}
